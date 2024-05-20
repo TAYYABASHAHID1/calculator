@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <center>
+        <div id="fix">
+<div class="container">
+<input type="text" disabled id="display">
+<br>
+
+<button onclick="toDisplay('9')" class="btns" >9</button>
+<button onclick="toDisplay('8')" class="btns" >8</button>
+<button onclick="toDisplay('7')" class="btns" >7</button>
+<button onclick="toDisplay('+')" class="btnns" >+</button>
+<br>
+<button onclick="toDisplay('6')" class="btns" >6</button>
+<button onclick="toDisplay('5')" class="btns" >5</button>
+<button onclick="toDisplay('4')" class="btns" >4</button>
+<button onclick="toDisplay('-')" class="btnns" >-</button>
+<br>
+<button onclick="toDisplay('3')" class="btns" >3</button>
+<button onclick="toDisplay('2')" class="btns" >2</button>
+<button onclick="toDisplay('1')" class="btns" >1</button>
+<button onclick="toDisplay('*')" class="btnns" >*</button>
+<br>
+<button onclick="finalAnswer()" class="btnns"  >=</button>
+<button onclick="displayNone()" class="btnns" >AC</button>
+<button onclick="toDisplay('0')" class="btnns" >0</button>
+<button onclick="toDisplay('/')" class="btnns" >/</button>
+</center>
+</div>
+</div>
+    <script>
+
+var display=document.getElementById("display");
+
+function toDisplay(number){
+display.value+=number
+
+}
+
+function finalAnswer(){
+display.value=eval(display.value)
+
+
+}
+
+function displayNone(){
+display.value="";
+
+}
+
+
+
+    </script>
+</body>
+</html>
